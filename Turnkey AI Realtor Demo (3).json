@@ -1,0 +1,1269 @@
+{
+  "agent_id": "",
+  "channel": "voice",
+  "last_modification_timestamp": 1765034143508,
+  "agent_name": "Turnkey AI Realtor Demo",
+  "response_engine": {
+    "type": "conversation-flow",
+    "version": 2,
+    "conversation_flow_id": "conversation_flow_d44f579eaf35"
+  },
+  "webhook_url": "https://services.leadconnectorhq.com/hooks/N3SmfcTtf8XyPhoLZCBr/webhook-trigger/01458196-b058-44c2-a70a-4162225d88e2",
+  "language": "en-US",
+  "data_storage_setting": "everything",
+  "opt_in_signed_url": false,
+  "end_call_after_silence_ms": 123000,
+  "version": 2,
+  "is_published": false,
+  "post_call_analysis_model": "gpt-4.1-mini",
+  "pii_config": {
+    "mode": "post_call",
+    "categories": []
+  },
+  "handbook_config": {
+    "natural_filler_words": true,
+    "speech_normalization": true
+  },
+  "analysis_successful_prompt": "Evaluate whether the agent seems to have a successful call with the user, where the agent finishes the task, and the call was complete without being cutoff.",
+  "analysis_summary_prompt": "Write a 1-3 sentence summary of the call based on the call transcript. Should capture the important information and actions taken during the call.",
+  "post_call_analysis_data": [
+    {
+      "type": "string",
+      "name": "detailed_call_summary",
+      "description": "Detailed summary of the entire call."
+    },
+    {
+      "type": "string",
+      "name": "Lead_Type",
+      "description": "seller, buyer, renter, or investor"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Price",
+      "description": "Price seller hopes to get"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Bedrooms",
+      "description": "Number of bedrooms in seller property"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Bathrooms",
+      "description": "Number of bathrooms in seller property"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Property_Type",
+      "description": "Property type seller owns"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Timeline",
+      "description": "When seller wants to sell"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Motivation",
+      "description": "Reason for selling"
+    },
+    {
+      "type": "string",
+      "name": "Property_Condition",
+      "description": "Current condition of property"
+    },
+    {
+      "type": "string",
+      "name": "Seller_Address",
+      "description": "Address of seller property"
+    },
+    {
+      "type": "string",
+      "name": "Buyer_Price_Range",
+      "description": "Price range buyer is comfortable with"
+    },
+    {
+      "type": "string",
+      "name": "Bedrooms_Wanted",
+      "description": "How many bedrooms buyer wants"
+    },
+    {
+      "type": "string",
+      "name": "Bathrooms_Wanted",
+      "description": "How many bathrooms buyer wants"
+    },
+    {
+      "type": "string",
+      "name": "Buyer_Property_Type",
+      "description": "Type of property buyer wants"
+    },
+    {
+      "type": "string",
+      "name": "Buyer_Timeline",
+      "description": "When buyer hopes to purchase"
+    },
+    {
+      "type": "string",
+      "name": "Buyer_Motivation",
+      "description": "Reason for wanting to move"
+    },
+    {
+      "type": "string",
+      "name": "Pre_Approved",
+      "description": "Whether buyer is pre-approved (yes/no)"
+    },
+    {
+      "type": "string",
+      "name": "First_Time_Buyer",
+      "description": "Whether first-time buyer (yes/no)"
+    },
+    {
+      "type": "string",
+      "name": "Cash_Buyer",
+      "description": "Payment method (cash/financing)"
+    },
+    {
+      "type": "string",
+      "name": "Preferred_Areas",
+      "description": "Specific areas wanted"
+    },
+    {
+      "type": "string",
+      "name": "Desired_Move_In_Date",
+      "description": "When buyer wants to move in"
+    },
+    {
+      "type": "string",
+      "name": "Investment_Type",
+      "description": "Type of investing (flips, buy-and-hold, etc)"
+    },
+    {
+      "type": "string",
+      "name": "Desired_Closing_Date",
+      "description": "When investor wants to close"
+    },
+    {
+      "type": "string",
+      "name": "Lease_End_Date",
+      "description": "When renter lease ends"
+    },
+    {
+      "type": "string",
+      "name": "Monthly_Rent_Budget",
+      "description": "Monthly rent budget"
+    },
+    {
+      "type": "string",
+      "name": "Deposit_Capability",
+      "description": "Whether renter has deposit funds"
+    },
+    {
+      "type": "string",
+      "name": "Appointment_Booked",
+      "description": "Whether appointment was booked (yes/no)"
+    },
+    {
+      "type": "string",
+      "name": "Appointment_Date_Time",
+      "description": "Date and time of appointment"
+    },
+    {
+      "type": "string",
+      "name": "Qualification_Score",
+      "description": "Lead qualification score 0-100"
+    },
+    {
+      "type": "string",
+      "name": "Verified_Phone_Number",
+      "description": "Verified phone number"
+    },
+    {
+      "type": "string",
+      "name": "Verified_Email",
+      "description": "Verified email"
+    },
+    {
+      "type": "string",
+      "name": "Left_a_Message",
+      "description": "Message left for realtor"
+    },
+    {
+      "type": "string",
+      "name": "Inbound_or_Outbound_Call",
+      "description": "Call direction"
+    },
+    {
+      "type": "string",
+      "name": "AI_Call_Result",
+      "description": "Result of call"
+    },
+    {
+      "type": "string",
+      "name": "Follow_Up_Reason",
+      "description": "Reason for follow up"
+    },
+    {
+      "type": "string",
+      "name": "Follow_Up_Date",
+      "description": "Date for follow up"
+    },
+    {
+      "type": "string",
+      "name": "Follow_Up_Method",
+      "description": "Method for follow up (Call/Text)"
+    },
+    {
+      "type": "string",
+      "name": "Follow_Up_Notes",
+      "description": "Notes for follow up"
+    },
+    {
+      "type": "string",
+      "name": "task_intent",
+      "description": "Task intent from realtor"
+    },
+    {
+      "type": "string",
+      "name": "contactId",
+      "description": "GoHighLevel contact ID"
+    }
+  ],
+  "voice_id": "11labs-Cimo",
+  "voice_temperature": 1.4,
+  "voice_speed": 1,
+  "volume": 1,
+  "enable_backchannel": true,
+  "backchannel_frequency": 0.7,
+  "reminder_trigger_ms": 20000,
+  "reminder_max_count": 1,
+  "max_call_duration_ms": 602000,
+  "interruption_sensitivity": 0.75,
+  "responsiveness": 0.89,
+  "normalize_for_speech": true,
+  "begin_message_delay_ms": 200,
+  "allow_user_dtmf": true,
+  "user_dtmf_options": {},
+  "conversationFlow": {
+    "conversation_flow_id": "conversation_flow_d44f579eaf35",
+    "version": 2,
+    "global_prompt": "You are {{ai_name}}, a calm, emotionally intelligent, sharp, and somewhat witty AI executive assistant for {{realtor_name}}. You are not a chatbot — you are an operational tool that executes real business tasks on {{realtor_name}}'s behalf.\n\nYour dual role:\n1. Inbound & Outbound Qualification: Identify lead type (buyer, seller, renter, investor), gather qualification details using NEPQ (Neuro-Emotional Persuasion Questioning), capture clean structured data, and book appointments when ready.\n2. Executive Assistant: Answer calls, execute CRM tasks via MCP, handle property lookups, respond to realtor directives, and automate {{realtor_name}}'s sales process.\n\n## Tone & Personality ##\nWarm, curious, human, emotionally intelligent, and somewhat witty. You sound like a real person, not a bot.\n\nNEPQ Behavioral Rules:\n- Use curiosity, clarity, and understanding\n- Mirror emotion\n- Summarize occasionally\n- Always allow them to fully finish speaking before responding\n- Maintain a steady, warm, human-like cadence\n\n## Key Operational Rules ##\n- Use {{current_time_America/New_York}} for all time references\n- If a question doesn't apply or the caller refuses to answer, return an empty string in your data\n- Transfer calls to {{realtor_name}} when requested\n- When confirming appointments recite back to the person on the phone the date & time they requested their appointment for.\n\n## Critical Data Output Rules ##\nAll Post Call Analysis data must:\n- Match exact field names defined in Retell\n- Contain literal values only — no commentary, sentences, or filler\n- Be empty strings if unanswered\n\n## NEVER SPEAK STRUCTURED DATA OUT LOUD ##\nRecord qualification data silently. Never say field names. Act like a human assistant having a natural conversation.\n\n## Appointment Booking Rules ##\n- If a requested slot is unavailable, offer the 2 nearest available times\n- Find out where the contact wants to meet (buyers and sellers only)\n- You cannot book appointments unless the contact exists in GoHighLevel\n\nUse the correct appointment title based on lead type:\n- Sellers: Listing Appointment\n- Buyers: Buyer Consultation\n- Investors: Investor Strategy Call\n- Renters: Renters Call\n\n## Fallback & Escalation ##\nIf caller becomes frustrated: I understand. I can connect you with {{realtor_name}} — would you like me to try to transfer you?",
+    "nodes": [
+      {
+        "name": "Intro",
+        "edges": [
+          {
+            "destination_node_id": "node-outbound-greeting",
+            "id": "edge-1764363259785-7fa9ypt68",
+            "transition_condition": {
+              "type": "equation",
+              "equations": [
+                {
+                  "left": "{{direction}}",
+                  "operator": "==",
+                  "right": "outbound"
+                }
+              ],
+              "operator": "||"
+            }
+          },
+          {
+            "destination_node_id": "node-inbound-greeting",
+            "id": "edge-1764363293390-yb4w84jw4",
+            "transition_condition": {
+              "type": "equation",
+              "equations": [
+                {
+                  "left": "{{direction}}",
+                  "operator": "==",
+                  "right": "inbound"
+                }
+              ],
+              "operator": "||"
+            }
+          },
+          {
+            "destination_node_id": "node-1764607265400",
+            "id": "edge-1764716313970-163wrlihw",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "Silently use the following tools at the beginning of every call."
+            }
+          }
+        ],
+        "id": "start-node-intro",
+        "type": "conversation",
+        "display_position": {
+          "x": 550,
+          "y": 160
+        },
+        "instruction": {
+          "type": "static_text",
+          "text": "Hello?"
+        }
+      },
+      {
+        "name": "Outbound Greeting",
+        "edges": [
+          {
+            "condition": "Seller",
+            "id": "edge-3",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they want to sell a property or are a seller"
+            },
+            "destination_node_id": "node-seller-path"
+          },
+          {
+            "condition": "Buyer",
+            "id": "edge-4",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they want to buy a property or are a buyer"
+            },
+            "destination_node_id": "node-buyer-path"
+          },
+          {
+            "condition": "Investor",
+            "id": "edge-5",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they are an investor or interested in investment properties"
+            },
+            "destination_node_id": "node-investor-path"
+          },
+          {
+            "condition": "Renter",
+            "id": "edge-6",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they want to rent or are looking for a rental"
+            },
+            "destination_node_id": "node-renter-path"
+          },
+          {
+            "condition": "Transfer request",
+            "id": "edge-7",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User asks to speak with the realtor directly"
+            },
+            "destination_node_id": "node-pre-transfer"
+          },
+          {
+            "condition": "Not available",
+            "id": "edge-8",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User says it's not a good time or asks for a callback"
+            },
+            "destination_node_id": "node-follow-up"
+          }
+        ],
+        "id": "node-outbound-greeting",
+        "type": "conversation",
+        "display_position": {
+          "x": 1100,
+          "y": 20
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "You are calling {{name}}. They don't know you're calling.\n\nOpen with: Hi, I'm looking for {{name}}.\n\nDO NOT ask for their name — you already have it.\n\nAfter they confirm who they are, say: Hi, this is {{ai_name}}, {{realtor_name}}'s AI assistant. I just received your inquiry about wanting to speak with a realtor and wanted to reach out. Are you looking to buy, sell, rent, invest, or is there something else you're looking for?\n\nListen carefully to their response to determine their lead type."
+        }
+      },
+      {
+        "name": "Inbound Greeting",
+        "edges": [
+          {
+            "condition": "Seller",
+            "id": "edge-9",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they want to sell a property"
+            },
+            "destination_node_id": "node-seller-path"
+          },
+          {
+            "condition": "Buyer",
+            "id": "edge-10",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they want to buy a property"
+            },
+            "destination_node_id": "node-buyer-path"
+          },
+          {
+            "condition": "Investor",
+            "id": "edge-11",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they are an investor"
+            },
+            "destination_node_id": "node-investor-path"
+          },
+          {
+            "condition": "Renter",
+            "id": "edge-12",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User indicates they want to rent"
+            },
+            "destination_node_id": "node-renter-path"
+          },
+          {
+            "condition": "Transfer",
+            "id": "edge-13",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User asks to speak with the realtor directly"
+            },
+            "destination_node_id": "node-pre-transfer"
+          },
+          {
+            "condition": "Leave message",
+            "id": "edge-14",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User only wants to leave a message"
+            },
+            "destination_node_id": "node-leave-message"
+          },
+          {
+            "condition": "Follow up",
+            "id": "edge-15",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User says it's not a good time"
+            },
+            "destination_node_id": "node-follow-up"
+          }
+        ],
+        "id": "node-inbound-greeting",
+        "type": "conversation",
+        "display_position": {
+          "x": 1100,
+          "y": 3560
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "Someone has called in. You don't know who they are.\n\nOpen with: Hi, this is {{ai_name}}, I'm {{realtor_name}}'s assistant. May I have your name and phone number please?\n\nAfter getting their name and phone number, ask: And what is the nature of your call today?\n\nListen carefully to determine their lead type."
+        }
+      },
+      {
+        "name": "Seller Path",
+        "edges": [
+          {
+            "condition": "Book appointment",
+            "id": "edge-16",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User agrees to schedule an appointment"
+            },
+            "destination_node_id": "node-1764467512114"
+          },
+          {
+            "condition": "Follow up",
+            "id": "edge-17",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User declines appointment but open to follow-up"
+            },
+            "destination_node_id": "node-follow-up"
+          },
+          {
+            "condition": "Transfer",
+            "id": "edge-18",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User asks to speak with realtor"
+            },
+            "destination_node_id": "node-pre-transfer"
+          },
+          {
+            "condition": "End call",
+            "id": "edge-19",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants to end the call"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-seller-path",
+        "type": "conversation",
+        "display_position": {
+          "x": 1650,
+          "y": 0
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "You are now qualifying a SELLER. Ask these questions naturally, one at a time:\n\n1. Out of curiosity, what price were you hoping to get for the property?\n2. How many bedrooms?\n3. And how many bathrooms?\n4. What type of property is it? Single-family, condo, or something else?\n5. What is the address of the property you're looking to sell?\n6. How soon were you hoping to sell?\n7. If you don't mind me asking, what's prompting the move?\n8. How would you describe the property's current condition?\n\nAfter gathering this information, if they seem motivated:\nIt sounds like timing is important for you — would it be helpful if {{realtor_name}} stopped by to see the property and give you an idea of what it could sell for?\n\nRecord all answers silently for post-call analysis."
+        }
+      },
+      {
+        "name": "Buyer Path",
+        "edges": [
+          {
+            "condition": "Book appointment",
+            "id": "edge-20",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User agrees to schedule an appointment"
+            },
+            "destination_node_id": "node-1764467512114"
+          },
+          {
+            "condition": "Follow up",
+            "id": "edge-21",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User declines appointment but open to follow-up"
+            },
+            "destination_node_id": "node-follow-up"
+          },
+          {
+            "condition": "Transfer",
+            "id": "edge-22",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User asks to speak with realtor"
+            },
+            "destination_node_id": "node-pre-transfer"
+          },
+          {
+            "condition": "End call",
+            "id": "edge-23",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants to end the call"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-buyer-path",
+        "type": "conversation",
+        "display_position": {
+          "x": 1650,
+          "y": 860
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "You are now qualifying a BUYER. Ask these questions naturally, one at a time:\n\n1. Just so I understand, what price range are you comfortable with?\n2. How many bedrooms would feel right for you?\n3. And how many bathrooms?\n4. What type of property do you see yourself moving into?\n5. When would you ideally like to move?\n6. What's prompting this move?\n7. Have you been pre-approved yet, or are you still exploring your options?\n8. Is this your first time buying, or have you gone through the process before?\n9. Are you planning on using financing, or paying cash?\n10. Do you have specific areas in mind that you'd prefer?\n11. And when would you ideally want to move in?\n\nAfter gathering this information, if they seem ready:\nIt sounds like you're getting serious about this — would it make sense to set up a quick call with {{realtor_name}} to look at listings that match what you're describing?\n\nRecord all answers silently for post-call analysis."
+        }
+      },
+      {
+        "name": "Investor Path",
+        "edges": [
+          {
+            "condition": "Book appointment",
+            "id": "edge-24",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User agrees to schedule an appointment"
+            },
+            "destination_node_id": "node-1764467512114"
+          },
+          {
+            "condition": "Follow up",
+            "id": "edge-25",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User declines appointment but open to follow-up"
+            },
+            "destination_node_id": "node-follow-up"
+          },
+          {
+            "condition": "Transfer",
+            "id": "edge-26",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User asks to speak with realtor"
+            },
+            "destination_node_id": "node-pre-transfer"
+          },
+          {
+            "condition": "End call",
+            "id": "edge-27",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants to end the call"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-investor-path",
+        "type": "conversation",
+        "display_position": {
+          "x": 1650,
+          "y": 2530
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "You are now qualifying an INVESTOR. Ask these questions naturally:\n\n1. Just so I understand, what price range are you comfortable with?\n2. How many bedrooms would feel right for you?\n3. And how many bathrooms?\n4. Have you been pre-approved yet, or are you still exploring your options?\n5. Are you planning on using financing, or paying cash?\n6. Do you have specific areas in mind that you'd prefer?\n7. Just so I understand your strategy, are you focused on flipping, buy-and-hold, or something else?\n8. When are you ideally looking to close on your next deal?\n\nAfter gathering this information:\nSounds like you're active right now. Would it be useful if {{realtor_name}} showed you a few opportunities that match what you're describing?\n\nRecord all answers silently for post-call analysis."
+        }
+      },
+      {
+        "name": "Renter Path",
+        "edges": [
+          {
+            "condition": "Book appointment",
+            "id": "edge-28",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User agrees to schedule an appointment"
+            },
+            "destination_node_id": "node-1764467512114"
+          },
+          {
+            "condition": "Follow up",
+            "id": "edge-29",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User declines appointment but open to follow-up"
+            },
+            "destination_node_id": "node-follow-up"
+          },
+          {
+            "condition": "Transfer",
+            "id": "edge-30",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User asks to speak with realtor"
+            },
+            "destination_node_id": "node-pre-transfer"
+          },
+          {
+            "condition": "End call",
+            "id": "edge-31",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants to end the call"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-renter-path",
+        "type": "conversation",
+        "display_position": {
+          "x": 1650,
+          "y": 3600
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "You are now qualifying a RENTER. Ask these questions naturally:\n\n1. How many bedrooms would feel right for you?\n2. And how many bathrooms?\n3. What type of property do you see yourself moving into?\n4. When would you ideally like to move?\n5. Do you have specific areas in mind that you'd prefer?\n6. And when would you ideally want to move in?\n7. When does your current lease end?\n8. What monthly budget are you most comfortable with?\n9. Do you have funds set aside for the deposit and first month's rent?\n\nAfter gathering this information:\nGot it — timing's coming up fast. Would you like {{realtor_name}} to help you find options before your lease ends?\n\nRecord all answers silently for post-call analysis."
+        }
+      },
+      {
+        "name": "Appointment Booking",
+        "edges": [
+          {
+            "condition": "Booked",
+            "id": "edge-32",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "Appointment has been booked and confirmed"
+            },
+            "destination_node_id": "node-goodbye"
+          },
+          {
+            "condition": "Changed mind",
+            "id": "edge-33",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User changes mind and wants to schedule later"
+            }
+          }
+        ],
+        "id": "node-appointment-booking",
+        "type": "conversation",
+        "display_position": {
+          "x": 3300,
+          "y": 1340
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "The user has agreed to schedule an appointment. Now book it.\n\nAsk: What day and time works best for you?\n\nUse get_slots to check availability. If their requested slot is unavailable, offer alternatives.\n\nIn case they use terms like \"today\", \"yesterday\", or \"tomorrow\" use {{current_time_America/New_York}} so you can get the correct date.\n\nOnce they choose a time:\n- For BUYERS: Where would you like {{realtor_name}} to meet you at?\n- For SELLERS: And you would like {{realtor_name}} to meet you at the property you're listing?\n\nUse the correct appointment title:\n- Sellers: Listing Appointment\n- Buyers: Buyer Consultation\n- Investors: Investor Strategy Call\n- Renters: Renters Call\n\nBook using create_appointment. If the contact doesn't exist in GoHighLevel, create them first.\n\nAfter booking, confirm\nExample: \"Perfect, you're all set for September 5th at 2 pm. {{realtor_name}} looks forward to meeting with you.\""
+        }
+      },
+      {
+        "name": "Follow Up",
+        "edges": [
+          {
+            "condition": "Captured",
+            "id": "edge-34",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "Follow-up details have been captured"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-follow-up",
+        "type": "conversation",
+        "display_position": {
+          "x": 3850,
+          "y": 2210
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "The user cannot or doesn't want to book now but may be open to follow-up.\n\nAsk: Totally understood. When would be a good time for me to follow up with you?\n\nThen ask: And how would you prefer I reach out — call or text?\n\nKeep it conversational. After gathering the follow-up details, confirm: Got it, I'll make a note of that and we'll reach out then."
+        }
+      },
+      {
+        "name": "Leave Message",
+        "edges": [
+          {
+            "condition": "Message captured",
+            "id": "edge-35",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User has finished leaving their message"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-leave-message",
+        "type": "conversation",
+        "display_position": {
+          "x": 3850,
+          "y": 4190
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "The user wants to leave a message for {{realtor_name}}.\n\nSay: Of course, I'd be happy to take a message. What would you like me to pass along to {{realtor_name}}?\n\nListen and record the message.\n\nAfter they finish, confirm: Got it. I'll make sure {{realtor_name}} gets your message."
+        }
+      },
+      {
+        "name": "Pre Transfer",
+        "edges": [
+          {
+            "condition": "Continue",
+            "id": "edge-36",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "After speaking"
+            },
+            "destination_node_id": "node-transfer-call"
+          }
+        ],
+        "id": "node-pre-transfer",
+        "type": "conversation",
+        "display_position": {
+          "x": 2200,
+          "y": 2510
+        },
+        "instruction": {
+          "type": "static_text",
+          "text": "Let me transfer you to {{realtor_name}} right now."
+        }
+      },
+      {
+        "name": "Transfer Call",
+        "edges": [
+          {
+            "condition": "Transfer failed or complete",
+            "id": "edge-37",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "Transfer completed or failed"
+            },
+            "destination_node_id": "node-transfer-failed"
+          }
+        ],
+        "id": "node-transfer-call",
+        "type": "conversation",
+        "display_position": {
+          "x": 2750,
+          "y": 2500
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "Attempt to transfer the call to {{realtor_name}} at {{realtor_number}}. If transfer fails, apologize and offer alternatives."
+        }
+      },
+      {
+        "name": "Transfer Failed",
+        "edges": [
+          {
+            "condition": "Callback",
+            "id": "edge-38",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants a callback"
+            },
+            "destination_node_id": "node-follow-up"
+          },
+          {
+            "condition": "Continue",
+            "id": "edge-39",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants to continue with qualification"
+            },
+            "destination_node_id": "node-outbound-greeting"
+          },
+          {
+            "condition": "End",
+            "id": "edge-40",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User wants to end the call"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-transfer-failed",
+        "type": "conversation",
+        "display_position": {
+          "x": 3300,
+          "y": 2980
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "The transfer to {{realtor_name}} was unsuccessful.\n\nSay: I'm sorry, it looks like {{realtor_name}} isn't available right now. Would you like me to have them call you back, or is there something I can help you with in the meantime?"
+        }
+      },
+      {
+        "instruction": {
+          "type": "prompt",
+          "text": "The user has indicated this isn't a good time.\n\nSay: No problem at all, I understand. When would be a better time for us to reach out?\n\nCapture their preferred callback time and method."
+        },
+        "name": "Not Good Time",
+        "global_node_setting": {
+          "condition": "User indicates this is not a good time to talk or they are busy"
+        },
+        "edges": [
+          {
+            "condition": "Follow up time given",
+            "id": "edge-42",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User provides a time for follow-up"
+            },
+            "destination_node_id": "node-follow-up"
+          },
+          {
+            "condition": "No follow up",
+            "id": "edge-43",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User declines to provide follow-up info"
+            },
+            "destination_node_id": "node-goodbye"
+          }
+        ],
+        "id": "node-not-good-time",
+        "type": "conversation",
+        "display_position": {
+          "x": 3300,
+          "y": 800
+        }
+      },
+      {
+        "name": "Goodbye",
+        "edges": [
+          {
+            "condition": "End call",
+            "id": "edge-44",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User says goodbye or conversation is complete"
+            },
+            "destination_node_id": "node-end-call"
+          }
+        ],
+        "id": "node-goodbye",
+        "type": "conversation",
+        "display_position": {
+          "x": 4400,
+          "y": 2230
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "Wrap up the call warmly.\n\nIf an appointment was booked: Perfect, you're all set. {{realtor_name}} looks forward to meeting with you. Take care!\n\nIf follow-up was scheduled: Great, we'll be in touch. Have a wonderful day!\n\nIf no appointment or follow-up: Thanks so much for your time today. Take care!"
+        }
+      },
+      {
+        "name": "End Call",
+        "id": "node-end-call",
+        "type": "end",
+        "display_position": {
+          "x": 4950,
+          "y": 2315
+        }
+      },
+      {
+        "tool_id": "tool-get-slots",
+        "name": "Get Slots",
+        "edges": [
+          {
+            "destination_node_id": "node-appointment-booking",
+            "id": "edge-1764451081258-0-1fpok92ol",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "The time slot is available and agreed upon."
+            }
+          }
+        ],
+        "global_node_setting": {
+          "condition": "You need to get the availability of {{realtor_name}}"
+        },
+        "id": "node-1764451081258",
+        "type": "function",
+        "tool_type": "local",
+        "speak_during_execution": false,
+        "display_position": {
+          "x": 2750,
+          "y": 1790
+        },
+        "wait_for_result": true
+      },
+      {
+        "tool_id": "tool-create-appointment",
+        "name": "Create Appointment",
+        "edges": [
+          {
+            "destination_node_id": "node-appointment-booking",
+            "id": "edge-1764467512114-0-xmr7hct8g",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "You've booked the appointment"
+            }
+          },
+          {
+            "destination_node_id": "node-1764451081258",
+            "id": "edge-1764608868587-k0wgf753j",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "If the appointment is unavailable, use the get slots function"
+            }
+          }
+        ],
+        "global_node_setting": {
+          "condition": "You need to book an appointment for {{realtor_name}}"
+        },
+        "id": "node-1764467512114",
+        "type": "function",
+        "tool_type": "local",
+        "speak_during_execution": false,
+        "display_position": {
+          "x": 2200,
+          "y": 1545
+        },
+        "wait_for_result": true
+      },
+      {
+        "mcp_tool_name": "contacts_get-contact",
+        "name": "MCP get contact",
+        "edges": [
+          {
+            "destination_node_id": "node-1764607577669",
+            "id": "edge-1764607360517-2ynl4ddrw",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "At the beginning of every call check if the person you're speaking with is in the CRM, as you're greeting the caller"
+            }
+          }
+        ],
+        "global_node_setting": {
+          "condition": "Describe the condition to jump to this node"
+        },
+        "response_variables": {},
+        "id": "node-1764607265400",
+        "mcp_id": "mcp-gohighlevel",
+        "type": "mcp",
+        "speak_during_execution": false,
+        "display_position": {
+          "x": 1100,
+          "y": 4601.293686792697
+        },
+        "wait_for_result": false
+      },
+      {
+        "else_edge": {
+          "id": "edge-1764607577669-x3xp81tnj",
+          "transition_condition": {
+            "type": "prompt",
+            "prompt": "Else"
+          }
+        },
+        "name": "Logic Split Node",
+        "edges": [
+          {
+            "destination_node_id": "start-node-intro",
+            "id": "edge-1764607660030-4d0mc4fo5",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "If contact is found in the CRM continue call as usual"
+            }
+          },
+          {
+            "destination_node_id": "node-1764607786689",
+            "id": "edge-1764607730843-h1vvlepwp",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "If Contact is not found in the CRM, create a contact in the CRM using the following tool"
+            }
+          },
+          {
+            "id": "edge-1764609989556-h1udity3e",
+            "transition_condition": {
+              "type": "equation",
+              "equations": [
+                {
+                  "left": "{{from_number}}",
+                  "operator": "==",
+                  "right": "{{realtor_number}}"
+                },
+                {
+                  "left": "{{direction}}",
+                  "operator": "==",
+                  "right": "inbound"
+                }
+              ],
+              "operator": "||"
+            }
+          }
+        ],
+        "global_node_setting": {
+          "condition": "Describe the condition to jump to this node"
+        },
+        "id": "node-1764607577669",
+        "type": "branch",
+        "display_position": {
+          "x": 1650,
+          "y": 4560
+        }
+      },
+      {
+        "mcp_tool_name": "contacts_create-contact",
+        "name": "Create Contact MCP Tool",
+        "edges": [
+          {
+            "destination_node_id": "start-node-intro",
+            "id": "edge-1764607861400-kpzzm84nz",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "Continue call as usual"
+            }
+          }
+        ],
+        "global_node_setting": {
+          "condition": "Describe the condition to jump to this node"
+        },
+        "response_variables": {},
+        "id": "node-1764607786689",
+        "mcp_id": "mcp-gohighlevel",
+        "type": "mcp",
+        "speak_during_execution": false,
+        "display_position": {
+          "x": 2141.436572162175,
+          "y": 4586.261417901308
+        },
+        "wait_for_result": false
+      }
+    ],
+    "components": [],
+    "start_node_id": "start-node-intro",
+    "start_speaker": "agent",
+    "tools": [
+      {
+        "headers": {},
+        "parameter_type": "form",
+        "method": "POST",
+        "query_params": {},
+        "description": "Get available appointment slots for scheduling",
+        "type": "custom",
+        "url": "https://turnkeyai.app.n8n.cloud/webhook/fc9fd7e4-4da7-4ba6-848f-dff043874e2a",
+        "tool_id": "tool-get-slots",
+        "args_at_root": false,
+        "timeout_ms": 120000,
+        "name": "get_slots",
+        "response_variables": {},
+        "parameters": {
+          "type": "object",
+          "required": [
+            "date",
+            "timezone",
+            "Time"
+          ],
+          "properties": {
+            "date": {
+              "type": "string",
+              "description": "Date in YYYY-MM-DD format"
+            },
+            "timezone": {
+              "type": "string",
+              "description": "Timezone such as America/New_York"
+            },
+            "Time": {
+              "type": "string",
+              "description": "User's requested time in HH:MM 24-hour format, local to the provided timezone"
+            }
+          }
+        }
+      },
+      {
+        "headers": {},
+        "parameter_type": "json",
+        "method": "POST",
+        "query_params": {},
+        "description": "Book an appointment for the contact",
+        "type": "custom",
+        "url": "https://turnkeyai.app.n8n.cloud/webhook/retell-appointment",
+        "tool_id": "tool-create-appointment",
+        "args_at_root": false,
+        "timeout_ms": 120000,
+        "name": "create_appointment",
+        "response_variables": {},
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "preferred_time": {
+              "type": "string",
+              "description": "Preferred time HH:MM or 7pm"
+            },
+            "start_time": {
+              "type": "string",
+              "description": "Exact start time ISO8601"
+            },
+            "duration_minutes": {
+              "type": "integer",
+              "description": "Length in minutes"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Phone number"
+            },
+            "timezone": {
+              "type": "string",
+              "description": "Timezone"
+            },
+            "name": {
+              "type": "string",
+              "description": "Contact name"
+            },
+            "description": {
+              "type": "string",
+              "description": "Appointment notes"
+            },
+            "title": {
+              "type": "string",
+              "description": "Appointment title"
+            },
+            "email": {
+              "type": "string",
+              "description": "Contact email"
+            },
+            "preferred_date": {
+              "type": "string",
+              "description": "Preferred date YYYY-MM-DD"
+            }
+          },
+          "required": [
+            "name",
+            "phone",
+            "title"
+          ]
+        }
+      },
+      {
+        "tool_id": "tool-get-contact",
+        "method": "POST",
+        "speak_after_execution": true,
+        "name": "get_contact",
+        "description": "Get contact information from CRM",
+        "type": "custom",
+        "speak_during_execution": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "contact_id": {
+              "type": "string",
+              "description": "GHL Contact ID"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Phone number to search"
+            },
+            "email": {
+              "type": "string",
+              "description": "Email to search"
+            }
+          }
+        },
+        "url": "https://api.sympana.ai/api/hosted-tools/retell/42932126-952a-4ee2-9239-48c3f31ae393"
+      },
+      {
+        "tool_id": "tool-create-contact",
+        "method": "POST",
+        "speak_after_execution": true,
+        "name": "create_contact",
+        "description": "Create a new contact in CRM",
+        "type": "custom",
+        "speak_during_execution": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "last_name": {
+              "type": "string",
+              "description": "Last name"
+            },
+            "phone_number": {
+              "type": "string",
+              "description": "Phone number"
+            },
+            "first_name": {
+              "type": "string",
+              "description": "First name"
+            },
+            "email": {
+              "type": "string",
+              "description": "Email"
+            }
+          },
+          "required": [
+            "phone_number"
+          ]
+        },
+        "url": "https://api.sympana.ai/api/hosted-tools/retell/bbd31803-761a-4923-abe3-dace7dddda9b"
+      }
+    ],
+    "model_choice": {
+      "type": "cascading",
+      "model": "claude-4.5-sonnet",
+      "high_priority": false
+    },
+    "tool_call_strict_mode": true,
+    "default_dynamic_variables": {
+      "realtor_name": "Isaiah",
+      "calendarId": "SrohuNe3p9vXT5j0w4Te",
+      "ai_name": "Jamie",
+      "realtor_number": "+15551234567",
+      "MCP PIT": "pit-b5c7eaf8-e0e0-4943-b16b-5f34356639ee"
+    },
+    "knowledge_base_ids": [],
+    "kb_config": {
+      "top_k": 3,
+      "filter_score": 0.6
+    },
+    "begin_tag_display_position": {
+      "x": 0,
+      "y": 245
+    },
+    "is_published": false,
+    "mcps": [
+      {
+        "name": "GoHighLevel MCP",
+        "headers": {
+          "Authorization": "Bearer pit-b5c7eaf8-e0e0-4943-b16b-5f34356639ee",
+          "locationId": "N3SmfcTtf8XyPhoLZCBr"
+        },
+        "id": "mcp-gohighlevel",
+        "query_params": {},
+        "url": "https://services.leadconnectorhq.com/mcp/",
+        "timeout_ms": 10000
+      }
+    ],
+    "flex_mode": true
+  }
+}
